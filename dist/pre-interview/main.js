@@ -175,7 +175,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".main-heading {\r\n    background: #001970;\r\n    color: white;\r\n}\r\n\r\n.sub-heading {\r\n  height: 11em;\r\n  background: #303f9f;\r\n}\r\n\r\n.sub-heading-content {\r\n  margin: auto;\r\n}\r\n\r\n.sub-heading-title {\r\n  font-size: -webkit-xxx-large;\r\n}\r\n\r\nmat-form-field {\r\n  width: -webkit-fill-available;\r\n  font-size: 15px;\r\n  margin-top: 1em;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jaGFyYWN0ZXJzL2NoYXJhY3RlcnMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG9CQUFvQjtJQUNwQixhQUFhO0NBQ2hCOztBQUVEO0VBQ0UsYUFBYTtFQUNiLG9CQUFvQjtDQUNyQjs7QUFFRDtFQUNFLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLDZCQUE2QjtDQUM5Qjs7QUFFRDtFQUNFLDhCQUE4QjtFQUM5QixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0NBQ2pCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jaGFyYWN0ZXJzL2NoYXJhY3RlcnMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYWluLWhlYWRpbmcge1xyXG4gICAgYmFja2dyb3VuZDogIzAwMTk3MDtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLnN1Yi1oZWFkaW5nIHtcclxuICBoZWlnaHQ6IDExZW07XHJcbiAgYmFja2dyb3VuZDogIzMwM2Y5ZjtcclxufVxyXG5cclxuLnN1Yi1oZWFkaW5nLWNvbnRlbnQge1xyXG4gIG1hcmdpbjogYXV0bztcclxufVxyXG5cclxuLnN1Yi1oZWFkaW5nLXRpdGxlIHtcclxuICBmb250LXNpemU6IC13ZWJraXQteHh4LWxhcmdlO1xyXG59XHJcblxyXG5tYXQtZm9ybS1maWVsZCB7XHJcbiAgd2lkdGg6IC13ZWJraXQtZmlsbC1hdmFpbGFibGU7XHJcbiAgZm9udC1zaXplOiAxNXB4O1xyXG4gIG1hcmdpbi10b3A6IDFlbTtcclxufVxyXG4iXX0= */"
+module.exports = ".main-heading {\r\n  background: #001970;\r\n  color: white;\r\n}\r\n\r\n.sub-heading {\r\n  height: 11em;\r\n  background: #303f9f;\r\n}\r\n\r\n.sub-heading-content {\r\n  margin: auto;\r\n}\r\n\r\n.sub-heading-title {\r\n  font-size: -webkit-xxx-large;\r\n}\r\n\r\nmat-form-field {\r\n  width: -webkit-fill-available;\r\n  font-size: 15px;\r\n  margin-top: 1em;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .sub-heading-title {\r\n    font-size: large;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jaGFyYWN0ZXJzL2NoYXJhY3RlcnMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxhQUFhO0VBQ2Isb0JBQW9CO0NBQ3JCOztBQUVEO0VBQ0UsYUFBYTtDQUNkOztBQUVEO0VBQ0UsNkJBQTZCO0NBQzlCOztBQUVEO0VBQ0UsOEJBQThCO0VBQzlCLGdCQUFnQjtFQUNoQixnQkFBZ0I7Q0FDakI7O0FBRUQ7RUFDRTtJQUNFLGlCQUFpQjtHQUNsQjtDQUNGIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jaGFyYWN0ZXJzL2NoYXJhY3RlcnMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYWluLWhlYWRpbmcge1xyXG4gIGJhY2tncm91bmQ6ICMwMDE5NzA7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG4uc3ViLWhlYWRpbmcge1xyXG4gIGhlaWdodDogMTFlbTtcclxuICBiYWNrZ3JvdW5kOiAjMzAzZjlmO1xyXG59XHJcblxyXG4uc3ViLWhlYWRpbmctY29udGVudCB7XHJcbiAgbWFyZ2luOiBhdXRvO1xyXG59XHJcblxyXG4uc3ViLWhlYWRpbmctdGl0bGUge1xyXG4gIGZvbnQtc2l6ZTogLXdlYmtpdC14eHgtbGFyZ2U7XHJcbn1cclxuXHJcbm1hdC1mb3JtLWZpZWxkIHtcclxuICB3aWR0aDogLXdlYmtpdC1maWxsLWF2YWlsYWJsZTtcclxuICBmb250LXNpemU6IDE1cHg7XHJcbiAgbWFyZ2luLXRvcDogMWVtO1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHtcclxuICAuc3ViLWhlYWRpbmctdGl0bGUge1xyXG4gICAgZm9udC1zaXplOiBsYXJnZTtcclxuICB9XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -231,19 +231,16 @@ var CharactersComponent = /** @class */ (function () {
         ];
         this.films = [];
         this.errorFlag = false;
-        this.tempFilm = [];
         this.urlArray = [];
     }
     CharactersComponent.prototype.ngOnInit = function () {
     };
     CharactersComponent.prototype.onSelected = function (url) {
-        // this.url = url;
         this.fetchUrl(url);
     };
     CharactersComponent.prototype.fetchUrl = function (url) {
         var _this = this;
         this.films = [];
-        this.tempFilm = [];
         this.service.getUrls(url)
             .subscribe(function (res) {
             _this.errorFlag = false;
@@ -251,17 +248,6 @@ var CharactersComponent = /** @class */ (function () {
             Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["forkJoin"])(_this.urlArray.map(function (ele) { return _this.service.getFilms(ele); })).subscribe(function (results) {
                 _this.films = results;
             });
-        }, function (err) {
-            _this.errorFlag = true;
-            console.log(err);
-        });
-    };
-    CharactersComponent.prototype.fetchFilms = function (url) {
-        var _this = this;
-        this.service.getFilms(url)
-            .subscribe(function (res) {
-            _this.errorFlag = false;
-            _this.tempFilm.push(res);
         }, function (err) {
             _this.errorFlag = true;
             console.log(err);
@@ -300,7 +286,7 @@ module.exports = ".film-card {\r\n  max-width: 315px;\r\n  min-width: 315px;\r\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"films?.length > 0\">\n  <mat-card class=\"film-card\" *ngFor=\"let film of films\">\n    <mat-card-title>{{ film.title }}</mat-card-title>\n    <mat-card-subtitle>\n      Release Date: {{ film.release_date | date:'EEEE, MMMM d y' }} <br>\n      Director: {{ film.director }} <br>\n      Producer: {{ film.director }}\n    </mat-card-subtitle>\n  </mat-card>\n</div>\n\n<div class=\"error-msg\" *ngIf=\"errorFlag\">\n  <p class=\"mat-display-4\">4😯4</p>\n  <p class=\"mat-body-strong\">Oops! Something went wrong</p>\n</div>"
+module.exports = "<div *ngIf=\"films?.length > 0\">\n  <mat-card class=\"film-card\" *ngFor=\"let film of films\">\n    <mat-card-title>{{ film.title }}</mat-card-title>\n    <mat-card-subtitle>\n      Release Date: {{ film.release_date | date:'EEEE, MMMM d y' }} <br>\n      Director: {{ film.director }} <br>\n      Producer: {{ film.director }}\n    </mat-card-subtitle>\n  </mat-card>\n</div>\n\n<!-- error block if url is wrong -->\n<div class=\"error-msg\" *ngIf=\"errorFlag\">\n  <p class=\"mat-display-4\">4😯4</p>\n  <p class=\"mat-body-strong\">Oops! Something went wrong</p>\n</div>"
 
 /***/ }),
 

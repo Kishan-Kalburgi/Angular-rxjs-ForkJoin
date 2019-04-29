@@ -1,6 +1,6 @@
 .main-heading {
-    background: #001970;
-    color: white;
+  background: #001970;
+  color: white;
 }
 
 .sub-heading {
@@ -20,4 +20,10 @@ mat-form-field {
   width: -webkit-fill-available;
   font-size: 15px;
   margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .sub-heading-title {
+    font-size: large;
+  }
 }
