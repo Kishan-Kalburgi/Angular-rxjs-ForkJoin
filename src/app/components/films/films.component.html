@@ -1,0 +1,9 @@
+<div *ngIf="films?.length > 0">
+  <p>sdsa</p>
+  <mat-card class="film-card" *ngFor="let film of films">
+
+    <mat-card-title>{{ film.title }}</mat-card-title>
+    <mat-card-subtitle>{{ film.release_date }}</mat-card-subtitle>
+  </mat-card>
+</div>
+<!-- Thursday, May 19 2005 -->

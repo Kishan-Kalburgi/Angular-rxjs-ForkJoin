@@ -1,0 +1,7 @@
+.film-card {
+  max-width: 235px;
+  min-width: 235px;
+  margin: 1em;
+  display: inline-grid;
+  min-height: 5em;
+}
