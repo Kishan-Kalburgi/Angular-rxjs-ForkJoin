@@ -1,6 +1,15 @@
 <div *ngIf="films?.length > 0">
   <mat-card class="film-card" *ngFor="let film of films">
     <mat-card-title>{{ film.title }}</mat-card-title>
-    <mat-card-subtitle>{{ film.release_date | date:'EEEE, MMMM d y' }}</mat-card-subtitle>
+    <mat-card-subtitle>
+      Release Date: {{ film.release_date | date:'EEEE, MMMM d y' }} <br>
+      Director: {{ film.director }} <br>
+      Producer: {{ film.director }}
+    </mat-card-subtitle>
   </mat-card>
+</div>
+
+<div class="error-msg" *ngIf="errorFlag">
+  <p class="mat-display-4">4😯4</p>
+  <p class="mat-body-strong">details of this character not found</p>
 </div>

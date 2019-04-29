@@ -10,7 +10,6 @@
     <mat-form-field>
       <mat-label>Choose one</mat-label>
       <mat-select [(value)]="character" (selectionChange)="onSelected(character)">
-        <mat-option readonly>None</mat-option>
         <mat-option *ngFor="let character of characters" [value]="character.url">
           {{character.name}}
         </mat-option>
@@ -19,4 +18,4 @@
   </span>
 </mat-toolbar>
 
-<app-films [films]="films"></app-films>
+<app-films [films]="films" [errorFlag]="errorFlag"></app-films>

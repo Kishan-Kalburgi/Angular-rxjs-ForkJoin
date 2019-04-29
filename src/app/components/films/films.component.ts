@@ -11,6 +11,7 @@ export class FilmsComponent implements OnInit {
 
 
   @Input() public films;
+  @Input() public errorFlag;
 
   constructor() { }
 
