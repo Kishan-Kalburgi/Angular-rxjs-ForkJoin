@@ -31,7 +31,6 @@ export class CharactersComponent implements OnInit {
 
   public films = [];
   public errorFlag = false;
-  tempFilm = [];
   urlArray = [];
 
   constructor(
@@ -42,13 +41,11 @@ export class CharactersComponent implements OnInit {
   }
 
   onSelected(url) {
-    // this.url = url;
     this.fetchUrl(url);
   }
 
   fetchUrl(url) {
     this.films = [];
-    this.tempFilm = [];
     this.service.getUrls(url)
       .subscribe(
         res => {
@@ -64,19 +61,4 @@ export class CharactersComponent implements OnInit {
         }
       );
   }
-
-  fetchFilms(url) {
-    this.service.getFilms(url)
-      .subscribe(
-        res => {
-          this.errorFlag = false;
-          this.tempFilm.push(res);
-        },
-        err => {
-          this.errorFlag = true;
-          console.log(err);
-        }
-      );
-  }
-
 }

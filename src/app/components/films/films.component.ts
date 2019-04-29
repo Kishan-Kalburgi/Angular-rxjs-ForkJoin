@@ -1,6 +1,4 @@
-import { FilmsModel } from './../../models/films.model';
 import { Component, OnInit, Input } from '@angular/core';
-import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-films',
@@ -16,6 +14,5 @@ export class FilmsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
   }
 }
