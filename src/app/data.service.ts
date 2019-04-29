@@ -8,6 +8,10 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
+  getUrls(url) {
+    return this.http.get(url);
+  }
+
   getFilms(url) {
     return this.http.get(url);
   }
