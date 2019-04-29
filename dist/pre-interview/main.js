@@ -203,6 +203,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/data.service */ "./src/app/data.service.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+
 
 
 
@@ -246,10 +248,9 @@ var CharactersComponent = /** @class */ (function () {
             .subscribe(function (res) {
             _this.errorFlag = false;
             _this.urlArray = res['films'];
-            _this.urlArray.forEach(function (ele) {
-                _this.fetchFilms(ele);
+            Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["forkJoin"])(_this.urlArray.map(function (ele) { return _this.service.getFilms(ele); })).subscribe(function (results) {
+                _this.films = results;
             });
-            _this.films = _this.tempFilm;
         }, function (err) {
             _this.errorFlag = true;
             console.log(err);
@@ -299,7 +300,7 @@ module.exports = ".film-card {\r\n  max-width: 315px;\r\n  min-width: 315px;\r\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"films?.length > 0\">\n  <mat-card class=\"film-card\" *ngFor=\"let film of films\">\n    <mat-card-title>{{ film.title }}</mat-card-title>\n    <mat-card-subtitle>\n      Release Date: {{ film.release_date | date:'EEEE, MMMM d y' }} <br>\n      Director: {{ film.director }} <br>\n      Producer: {{ film.director }}\n    </mat-card-subtitle>\n  </mat-card>\n</div>\n\n<div class=\"error-msg\" *ngIf=\"errorFlag\">\n  <p class=\"mat-display-4\">4😯4</p>\n  <p class=\"mat-body-strong\">details of this character not found</p>\n</div>"
+module.exports = "<div *ngIf=\"films?.length > 0\">\n  <mat-card class=\"film-card\" *ngFor=\"let film of films\">\n    <mat-card-title>{{ film.title }}</mat-card-title>\n    <mat-card-subtitle>\n      Release Date: {{ film.release_date | date:'EEEE, MMMM d y' }} <br>\n      Director: {{ film.director }} <br>\n      Producer: {{ film.director }}\n    </mat-card-subtitle>\n  </mat-card>\n</div>\n\n<div class=\"error-msg\" *ngIf=\"errorFlag\">\n  <p class=\"mat-display-4\">4😯4</p>\n  <p class=\"mat-body-strong\">Oops! Something went wrong</p>\n</div>"
 
 /***/ }),
 

@@ -1,7 +1,7 @@
 import { CharacterModel } from './../../models/character.model';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
-import { FilmsModel } from 'src/app/models/films.model';
+import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-characters',
@@ -54,10 +54,9 @@ export class CharactersComponent implements OnInit {
         res => {
           this.errorFlag = false;
           this.urlArray = res['films'];
-          this.urlArray.forEach(ele => {
-            this.fetchFilms(ele);
+          forkJoin(this.urlArray.map(ele => this.service.getFilms(ele))).subscribe(results => {
+            this.films = results;
           });
-          this.films = this.tempFilm;
         },
         err => {
           this.errorFlag = true;
