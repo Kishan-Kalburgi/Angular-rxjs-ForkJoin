@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <mat-toolbar-row class="main-heading mat-elevation-z10">
+    Pre-Interview
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-toolbar class="sub-heading" color="primary">
+  <span class="sub-heading-content">
+    <p class="sub-heading-title mat-headline">Select You Favorite Character</p>
+    <mat-form-field>
+      <mat-label>Choose one</mat-label>
+      <mat-select [(ngModel)]="character" (change)="onSelected()">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let character of characters" [value]="character.name">
+          {{character.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </span>
+</mat-toolbar>
+
+<app-films></app-films>

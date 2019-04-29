@@ -1,0 +1,23 @@
+.main-heading {
+    background: #001970;
+    color: white;
+}
+
+.sub-heading {
+  height: 11em;
+  background: #303f9f;
+}
+
+.sub-heading-content {
+  margin: auto;
+}
+
+.sub-heading-title {
+  font-size: -webkit-xxx-large;
+}
+
+mat-form-field {
+  width: -webkit-fill-available;
+  font-size: 15px;
+  margin-top: 1em;
+}
