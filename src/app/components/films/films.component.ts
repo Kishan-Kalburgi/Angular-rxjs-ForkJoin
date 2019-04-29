@@ -1,5 +1,5 @@
 import { FilmsModel } from './../../models/films.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 
 @Component({
@@ -9,23 +9,12 @@ import { DataService } from 'src/app/data.service';
 })
 export class FilmsComponent implements OnInit {
 
-  films: FilmsModel[];
 
-  constructor(private service: DataService) { }
+  @Input() public films;
+
+  constructor() { }
 
   ngOnInit() {
-  }
 
-  fetchFilms(url) {
-    this.service.getFilms(url)
-      .subscribe(
-        res => {
-          this.films = res['data'];
-          console.log(this.films);
-        },
-        err => {
-          console.log(err);
-        }
-      );
   }
 }

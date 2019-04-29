@@ -1,5 +1,7 @@
 import { CharacterModel } from './../../models/character.model';
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data.service';
+import { FilmsModel } from 'src/app/models/films.model';
 
 @Component({
   selector: 'app-characters',
@@ -27,15 +29,47 @@ export class CharactersComponent implements OnInit {
     }
   ];
 
-  public url: string;
+  public films = [];
+  urlArray = [];
 
-  constructor() { }
+  constructor(
+    private service: DataService
+  ) { }
 
   ngOnInit() {
   }
 
-  onSelected(character) {
-    console.log(character);
+  onSelected(url) {
+    // this.url = url;
+    this.fetchUrl(url);
+  }
+
+  fetchUrl(url) {
+    this.service.getUrls(url)
+      .subscribe(
+        res => {
+          this.urlArray = res['films'];
+          this.films = [];
+          this.urlArray.forEach(ele => {
+            this.fetchFilms(ele);
+          });
+        },
+        err => {
+          console.log(err);
+        }
+      );
+  }
+
+  fetchFilms(url) {
+    this.service.getFilms(url)
+      .subscribe(
+        res => {
+          this.films.push(res);
+        },
+        err => {
+          console.log(err);
+        }
+      );
   }
 
 }

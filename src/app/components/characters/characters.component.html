@@ -9,9 +9,9 @@
     <p class="sub-heading-title mat-headline">Select You Favorite Character</p>
     <mat-form-field>
       <mat-label>Choose one</mat-label>
-      <mat-select [(ngModel)]="character" (change)="onSelected()">
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let character of characters" [value]="character.name">
+      <mat-select [(value)]="character" (selectionChange)="onSelected(character)">
+        <mat-option readonly>None</mat-option>
+        <mat-option *ngFor="let character of characters" [value]="character.url">
           {{character.name}}
         </mat-option>
       </mat-select>
@@ -19,4 +19,4 @@
   </span>
 </mat-toolbar>
 
-<app-films></app-films>
+<app-films [films]="films"></app-films>
